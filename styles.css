@@ -104,7 +104,8 @@ body {
 }
 
 #email-field,
-#password-container {
+#password-container,
+#phone-box {
     grid-column: span 2;
 }
 
@@ -122,6 +123,27 @@ input::placeholder {
     font-weight: lighter;
     margin: 10px;
     color: rgb(123, 123, 123);
+}
+
+.phone-box {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-content: center;
+}
+
+.phone-box input {
+    border-radius: 0 8px 8px 0;
+}
+
+.country-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #067A39;
+    font-family: "lato", sans-serif;
+
+    color: white;
+    border-radius: 8px 0 0 8px;
 }
 
 #password-container {
@@ -177,7 +199,7 @@ input::placeholder {
 }
 
 .cat-button {
-    padding: 24px 144px;
+    padding: 24px 200px;
     font-family: "lato", sans-serif;
     font-size: 18px;
     border-radius: 16px;
@@ -188,6 +210,8 @@ input::placeholder {
     letter-spacing: 1px;
     cursor: pointer;
     box-shadow: 1px 4px 16px #ae9666;
+
+    /* border: 2px solid red;  */
 
 }
 
@@ -289,48 +313,7 @@ footer {
     z-index: 2;
 }
 
-@media (min-width: 1201px) and (max-width: 1600px) {
-    .hero-section {
-        margin: 30px 0;
-    }
 
-    .form-container {
-        margin: 0 480px;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 40px 40px 40px;
-        gap: 24px;
-    }
-
-    .agreement-container {
-        display: flex;
-        justify-content: center;
-        margin: 0 480px;
-        /* font-size: 12px; */
-    }
-
-
-    .cat-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 24px;
-
-    }
-
-    .cat-button {
-        padding: 24px 144px;
-        font-family: "lato", sans-serif;
-        font-size: 18px;
-        border-radius: 16px;
-        background-color: orange;
-
-        border: orange;
-
-        letter-spacing: 1px;
-        cursor: pointer;
-
-    }
-}
 
 @media (min-width: 481px) and (max-width: 1200px) {
 
