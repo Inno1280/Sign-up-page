@@ -541,8 +541,37 @@ footer {
         margin: 0;
     }
 
+    .phone-box {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        justify-content: center;
+    }
+
+    .phone-box input {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .country-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #067A39;
+        font-family: "lato", sans-serif;
+
+        color: white;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .form-container>.phone-box {
+        height: 40px;
+
+        /* width: 100%; */
+        grid-column: span 2;
+        margin: 0;
+    }
+
     input::placeholder {
-        color: grey;
+        color: black;
 
     }
 
@@ -579,14 +608,14 @@ footer {
     .cat-container {
         display: flex;
         justify-content: center;
-        margin-top: 12px;
+        margin-top: 14px;
 
     }
 
     .cat-button {
         padding: 16px 72px;
         font-family: "lato", sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         border-radius: 16px;
         background-color: orange;
 
@@ -595,6 +624,7 @@ footer {
         letter-spacing: 1px;
         cursor: pointer;
         margin: 8px;
+
 
     }
 
