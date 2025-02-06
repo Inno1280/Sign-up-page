@@ -1,0 +1,693 @@
+body {
+    /* background-color: rgb(6, 122, 57); */
+    background-image: url(./assets/images/pexels-halis-collu-2057418323-29219216.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+
+}
+
+/* NAVBAR STYLING */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 0 100px;
+    /* border-bottom:  1px solid; */
+    border-bottom: 1px solid rgb(61, 148, 61);
+    background-color: #067A39;
+
+}
+
+.logo-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.alternate-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alternate-action>a {
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.alternate-action>p {
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.alternate-action2 {
+    display: none;
+}
+
+.logo-text {
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+}
+
+.headline {
+    font-family: "lato", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+.subtext {
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin: 10px;
+    color: whitesmoke;
+    margin: 0;
+    /* border: 2px solid; */
+}
+
+/* FORM SECTION */
+.form-container {
+    margin: 0 480px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px 40px 40px;
+    gap: 24px;
+}
+
+#email-field,
+#password-container {
+    grid-column: span 2;
+}
+
+input {
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    background-color: #e1e1e1;
+}
+
+input::placeholder {
+    font-family: "lato", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin: 10px;
+    color: rgb(123, 123, 123);
+}
+
+#password-container {
+    /* border: 2px solid;  */
+    display: flex;
+    align-items: center;
+}
+
+#password-field {
+    height: 40px;
+    width: 100%;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 510px;
+    /* border: 2px solid red; */
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+/* AGREEMENT SECTION */
+.agreement-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 500px;
+    /* font-size: 12px; */
+}
+
+.agreement-container>p {
+    text-align: center;
+    margin-top: 24px;
+    font-family: "lato", sans-serif;
+    font-size: 12px;
+    color: rgb(188, 188, 188);
+    letter-spacing: 1px;
+}
+
+.agreement a {
+    color: rgb(188, 188, 188);
+}
+
+
+
+/* CAT BUTTON */
+.cat-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+
+}
+
+.cat-button {
+    padding: 24px 144px;
+    font-family: "lato", sans-serif;
+    font-size: 18px;
+    border-radius: 16px;
+    background-color: orange;
+
+    border: orange;
+
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 1px 4px 16px #ae9666;
+
+}
+
+.cat-button:hover {
+    background-color: rgb(245, 179, 56);
+}
+
+.dark-box {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+    position: relative;
+    top: -380px;
+
+}
+
+
+/* OR CONTINUE */
+.or-continue {
+    display: flex;
+    justify-content: center;
+
+    /* border-bottom: 1px solid rgb(188, 188, 188); */
+    padding: 0;
+
+    margin: 0 490px;
+}
+
+.continue-text {
+    /* background-color: #c8c8c8; */
+
+    margin: 0;
+    padding: 4px 16px;
+
+    position: relative;
+    top: 8px;
+    font-family: "lato", sans-serif;
+    font-size: 14px;
+    color: rgb(188, 188, 188);
+    border-radius: 16px;
+    z-index: 2;
+}
+
+
+
+/* SOCIALS BUTTONS */
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 50px;
+    z-index: 2;
+}
+
+.socials button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 24px;
+    padding: 1px 8px;
+    background-color: transparent;
+    border: 1px solid rgb(188, 188, 188);
+    color: rgb(188, 188, 188);
+
+    cursor: pointer;
+
+}
+
+button>img {
+    background-color: rgb(220, 220, 220);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+button>p {
+    font-family: "lato", sans-serif;
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+footer {
+    margin: 0 100px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    padding: 8px;
+    /* border-color: #3D943D; */
+    font-family: "lato", sans-serif;
+    font-size: 12px;
+    color: rgb(177, 177, 177);
+
+    z-index: 2;
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .hero-section {
+        margin: 30px 0;
+    }
+
+    .form-container {
+        margin: 0 480px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 40px 40px 40px;
+        gap: 24px;
+    }
+
+    .agreement-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 480px;
+        /* font-size: 12px; */
+    }
+
+
+    .cat-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+    }
+
+    .cat-button {
+        padding: 24px 144px;
+        font-family: "lato", sans-serif;
+        font-size: 18px;
+        border-radius: 16px;
+        background-color: orange;
+
+        border: orange;
+
+        letter-spacing: 1px;
+        cursor: pointer;
+
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        margin: 0;
+        /* border-bottom:  1px solid; */
+        border-bottom: 1px solid rgb(61, 148, 61);
+    }
+
+    .alternate-action>p {
+        font-size: 12px;
+    }
+
+    .alternate-action>a {
+        font-size: 12px;
+    }
+
+    .hero-section {
+        margin: 30px;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .subtext {
+        font-size: 12px;
+    }
+
+    .form-container {
+        margin: 0 180px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 40px 40px 40px;
+        gap: 24px;
+    }
+
+    .eye-icon {
+        position: absolute;
+        right: 210px;
+        /* border: 2px solid red; */
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .agreement-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 180px;
+        /* font-size: 12px; */
+    }
+
+    .agreement-container>p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+
+    .cat-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+    }
+
+    .cat-button {
+        padding: 24px 80px;
+        font-family: "lato", sans-serif;
+        font-size: 18px;
+        border-radius: 16px;
+        background-color: orange;
+
+        border: orange;
+
+        letter-spacing: 1px;
+        cursor: pointer;
+
+    }
+
+    /* OR CONTINUE */
+    .or-continue {
+        margin: 20px 190px;
+    }
+
+    .continue-text {
+        font-size: 12px;
+    }
+
+
+    /* SOCIALS BUTTONS */
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        gap: 50px;
+    }
+
+    .socials button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 24px;
+        padding: 1px 8px;
+        background-color: #067A39;
+        border: 1px solid rgb(188, 188, 188);
+        color: rgb(188, 188, 188);
+
+        cursor: pointer;
+
+    }
+
+    button>img {
+        background-color: rgb(220, 220, 220);
+        border-radius: 50%;
+        padding: 4px;
+    }
+
+    button>p {
+        font-family: "lato", sans-serif;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 319px) and (max-width: 481px) {
+
+    body {
+        /* height: 100vh;
+        background-image: url(./assets/images/pexels-halis-collu-2057418323-29219216.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; */
+        height: 100vh;
+        margin: 0;
+        /* position: relative;
+        bottom: 50px;   */
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+
+        margin: 0;
+        /* border-bottom:  1px solid; */
+        border-bottom: 1px solid rgb(61, 148, 61);
+    }
+
+    .logo-container>img {
+        align-items: center;
+        height: 30px;
+    }
+
+    .logo-container>p {
+        font-size: 16px;
+    }
+
+    .alternate-action {
+        display: none;
+    }
+
+    /* .alternate-action>p {
+        font-size: 10px;
+    }
+
+    .alternate-action>a {
+        font-size: 10px;
+    } */
+
+    .hero-section {
+        margin: 8px 8px;
+        padding: 0;
+    }
+
+    .headline {
+        font-size: 1.8rem;
+        margin: 0;
+        /* text-align: center; */
+
+    }
+
+    .subtext {
+        font-size: 12px;
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    .form-container {
+        margin: 6px 8px;
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 18px;
+    }
+
+    .form-container>input {
+        height: 40px;
+
+        /* width: 100%; */
+        grid-column: span 2;
+        margin: 0;
+    }
+
+    input::placeholder {
+        color: grey;
+
+    }
+
+
+
+    .eye-icon {
+        position: absolute;
+        right: 32px;
+        /* border: 2px solid red; */
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .agreement-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 8px;
+        /* font-size: 12px; */
+    }
+
+    .agreement-container>p {
+        font-size: 10px;
+        line-height: 12px;
+        color: white;
+    }
+
+    .agreement-container p>a {
+        font-size: 10px;
+        line-height: 12px;
+        color: white;
+    }
+
+
+    .cat-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+
+    }
+
+    .cat-button {
+        padding: 16px 72px;
+        font-family: "lato", sans-serif;
+        font-size: 12px;
+        border-radius: 16px;
+        background-color: orange;
+
+        border: orange;
+
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin: 8px;
+
+    }
+
+    .dark-box {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 400px;
+        background-color: black;
+        opacity: 0.6;
+        z-index: -1;
+        position: relative;
+        top: -365px;
+
+    }
+
+    .alternate-action2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    .alternate-action2>p {
+        font-size: 12px;
+        font-weight: 600;
+        color: #E1E1E1;
+        font-family: "lato", sans-serif;
+
+    }
+
+    .alternate-action2>a {
+
+        font-size: 12px;
+        font-weight: 600;
+        color: #E1E1E1;
+        font-family: "lato", sans-serif;
+    }
+
+    /* OR CONTINUE */
+    .or-continue {
+        margin: 4px 8px;
+    }
+
+    .continue-text {
+        font-size: 12px;
+        color: #E1E1E1;
+        margin-top: 0;
+        position: relative;
+        bottom: 2px;
+    }
+
+
+    /* SOCIALS BUTTONS */
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin: 8px;
+        gap: 20px;
+    }
+
+    .socials button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 50%;
+        padding: 1px;
+        background-color: #067A39;
+        border: 1px solid rgb(188, 188, 188);
+        color: rgb(188, 188, 188);
+
+        cursor: pointer;
+
+    }
+
+    button>img {
+        background-color: rgb(220, 220, 220);
+        border-radius: 50%;
+        padding: 4px;
+    }
+
+    button>p {
+        font-family: "lato", sans-serif;
+        font-size: 12px;
+        display: none;
+    }
+
+    footer {
+        font-size: 10px;
+        margin: 0 8px;
+    }
+}
